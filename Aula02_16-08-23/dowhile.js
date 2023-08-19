@@ -1,11 +1,11 @@
 function inteiroAleatorio(num){
     const valor = Math.random() * num
-    return  valor
+    return  Math.floor(valor)
 }
 
 
 do{
-    var opcao = inteiroAleatorio(20)
+    var opcao = inteiroAleatorio(15)
     console.log(`Opção escolhida foi ${opcao}`)
 }while(opcao != 1)
 
