@@ -10,3 +10,4 @@ do{
 }while(opcao != 1)
 
 console.log("FIM")
+
