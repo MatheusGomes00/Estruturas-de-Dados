@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuario</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #fce49c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+    </style>
+    <h1>Cadastrar Alunos</h1>
+    <ol>
+        <li>Nome:
+            <input type="text" id="inNome">
+        </li>
+        <li>Ra:
+            <input type="text" id="inRa">
+        </li>
+        <li>Idade:
+            <input type="text" id="inIdade">
+        </li>
+        <li>Sexo:
+            <input type="text" id="inSexo">
+        </li>
+        <li>Média:
+            <input type="text" id="inMedia">
+        </li>
+        <li>Resultado:
+            <input type="text" id="inResultado">
+        </li>
+        <input type="button", value="Cadastrar", id="inCadastrar">
+
+    </ol>
+    <input type="button", value="Voltar", id="inVoltar">
+
+    <script>
+        function voltarPaginaPrincipal() {
+            window.location.href = "FrontProjeto.html";
+        }
+        document.getElementById('inVoltar').addEventListener('click', voltarPaginaPrincipal)
+    </script>
+</body>
+</html>
