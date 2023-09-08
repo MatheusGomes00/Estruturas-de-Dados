@@ -34,8 +34,12 @@ Algoritmo de busca sequencial
     função externa determine que o objeto atual contém o valor de busca, 
     ou 'false', caso contrário
 
-Um arquivo MJS é um arquivo de código fonte contendo um Módulo ES (Módulo 
+Um arquivo MJS (.mjs) é um arquivo de código fonte contendo um Módulo ES (Módulo 
 ECMAScript) para uso com um aplicativo Nodejs. Os arquivos MJS são gravados 
 em JavaScript, e também podem usar a extensão .JS fora do contexto do Nodejs. 
 Os módulos ES permitem que desenvolvedores web e aplicativos organizem o código 
 em componentes reutilizáveis menores.
+
+
+Para realizar uma busca sequencial, o vetor não precisa estar ordenado;
+Para realizar uma busca binária, o vetor precisa estar ordenado.
