@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRABALHO 1º BIMESTRE–ESTRUTURA DE DADOS</title>
+
+    <!-- carrega a folha de estilos para o balao -->
+    <link rel="stylesheet" type="text/css" href="stylesCSS.css"
 </head>
 <body>
     <style>
@@ -30,10 +33,37 @@
         <input type="number", id="inTextexecucao">
         <input type="button", value="Executar", id="inExecutar">
     </p>
-    <p id = "outTeste"></p>
+    
+    <!-- carrega o localStorage que contém a variável de Relatório -->
+    <script type="module">
+        const listaAlunosString = localStorage.getItem('listaAlunos')
+        if(listaAlunosString){
+            window.listaAlunos = JSON.parse(listaAlunosString)}
+    </script>
+
+    <div id="relatorio1" class="balao">
+        <span id="fecharBalao" class="fechar">&times;</span>
+        <h2>Relatório de Alunos em ordem crescente por Nome</h2>
+        <p id="listaAlunos"></p>
+    </div>
+
+    <script type="module">
+        if(listaAlunos){
+            const listaAlunosElement = document.getElementById("listaAlunos")
+            const listaFormatada = listaAlunos.map(aluno => {
+                return `Nome: ${aluno.nome}, RA: ${aluno.ra}, Idade: ${aluno.idade}, Sexo: ${aluno.sexo}, Media: ${aluno.media}, Resultado: ${aluno.resultado}<br>`
+            }).join('')
+            listaAlunosElement.innerHTML = listaFormatada
+        }
+        
+    </script>
 
     
 
-    <script src="BackProjeto.mjs"></script>
+    <!-- <script type="module">
+        import {teste} from './BackProjeto.mjs'
+        document.getElementById("teste").textContent = teste
+    </script> -->
+    <script type="module" src="BackProjeto.mjs"></script>
 </body>
 </html>
