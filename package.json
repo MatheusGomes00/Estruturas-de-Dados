@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "excel4node": "^1.8.2",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
-  }
-}
