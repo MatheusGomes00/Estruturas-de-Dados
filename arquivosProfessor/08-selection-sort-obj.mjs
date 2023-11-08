@@ -27,8 +27,8 @@ selectionSort(objMotoristas, (elem1, elem2) => {
     // Empresas diferentes, comparação direta de razao_social
     else return elem1.razao_social > elem2.razao_social
 })
-let memoriaMB = process.memoryUsage().heapUsed / 1024 / 1024
-console.timeEnd("...")
+// let memoriaMB = process.memoryUsage().heapUsed / 1024 / 1024
+// console.timeEnd("...")
 
 console.log(objMotoristas)
-console.log({pass, comps, trocas, memoriaMB})
+// console.log({pass, comps, trocas, memoriaMB})

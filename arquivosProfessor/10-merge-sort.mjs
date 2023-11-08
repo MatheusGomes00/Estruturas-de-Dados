@@ -24,7 +24,6 @@ function mergeSort(vetor){
             vetRes.push(vetEsq[posEsq])
         }
     }
-
 }
 
 let nums = [ 77, 44, 22, 33, 99, 55, 88, 0, 66, 11 ]
