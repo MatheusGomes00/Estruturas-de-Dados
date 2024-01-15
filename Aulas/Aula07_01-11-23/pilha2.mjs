@@ -15,10 +15,10 @@ pilha.push(15)
 console.log(pilha.print())
 
 pilha.pop()
-pilha.pop()
+var teste = pilha.pop()
+console.log(teste)
+// console.log(pilha.peek())
 
-console.log(pilha.peek())
-
-console.log(pilha.print())
-console.log("Pilha está vazia?", pilha.isEmpty)
+// console.log(pilha.print())
+// console.log("Pilha está vazia?", pilha.isEmpty)
 
